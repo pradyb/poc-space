@@ -1,0 +1,23 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: fabric8-role
+rules:
+- apiGroups: ["","apps"]
+  resources: ["pods","services","deployments","namespaces"]
+  verbs: ["get","list"]
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: fabric8-rbac
+subjects:
+  - kind: ServiceAccount
+    name: default
+    namespace: default
+roleRef:
+  kind: ClusterRole
+  name: fabric8-role
+  apiGroup: rbac.authorization.k8s.io
