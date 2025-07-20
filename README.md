@@ -1,4 +1,6 @@
-# PoC Space to showcase my Sample/Demo applications
+### PoC Space
 
-[![CircleCI](https://circleci.com/gh/pradyb/poc-space/tree/master.svg?style=svg)](https://circleci.com/gh/pradyb/poc-space/tree/master)
+---
+
+A curated collection of sample, demo, and proof‑of‑concept (PoC) applications across various technologies and domains.
 
